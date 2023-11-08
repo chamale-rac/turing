@@ -49,16 +49,15 @@ export function WorkForm() {
 			const postData: postData = {
 				file: file,
 			}
-			const response = await fetch(
-				`${import.meta.env.VITE_SERVER_BASE_URL}/turing`,
-				{
-					method: 'POST',
-					headers: {
-						'Content-Type': 'application/json',
-					},
-					body: JSON.stringify(postData),
-				}
-			)
+
+			const BASE_URL = import.meta.env.VITE_SERVER_BASE_URL
+			const response = await fetch(`${BASE_URL}/turing`, {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify(postData),
+			})
 			const responseData: responseData = await response.json()
 
 			WorkFormProxy.response = responseData.response
