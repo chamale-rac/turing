@@ -51,7 +51,7 @@ export function Help() {
 								moment only one tape and cache is supported. Here some{' '}
 								<a
 									className='text-blue-500'
-									href='https://github.com/chamale-rac/grammar-server/tree/main/docs'
+									href='https://github.com/chamale-rac/turing-api/tree/main/assets'
 									target='_blank'
 								>
 									examples
