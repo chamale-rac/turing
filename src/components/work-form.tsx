@@ -50,6 +50,7 @@ export function WorkForm() {
 				file: file,
 			}
 
+			WorkFormProxy.loading = true
 			const BASE_URL = import.meta.env.VITE_SERVER_BASE_URL
 			const response = await fetch(`${BASE_URL}/turing`, {
 				method: 'POST',
@@ -70,6 +71,8 @@ export function WorkForm() {
 		} catch (e) {
 			toast({ title: 'Simulation', description: 'Something went wrong.' })
 			console.log(e)
+		} finally {
+			WorkFormProxy.loading = false
 		}
 	}
 

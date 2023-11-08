@@ -72,8 +72,10 @@ interface row {
 
 interface responseData {
 	response: row[]
+	loading: boolean
 }
 
 export const WorkFormProxy = proxy<responseData>({
 	response: [],
+	loading: false,
 })

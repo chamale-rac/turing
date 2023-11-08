@@ -9,6 +9,7 @@ import { Badge } from '@/components/ui/badge'
 import { WorkFormProxy, neoSaveProxy } from '@/config/proxies'
 import { useSnapshot } from 'valtio'
 import { SheetComponent } from '@/components/sheets'
+import { SkeletonDemo } from '@/components/skeleton-sheets'
 
 export function Results() {
 	const WorkFormProxySnap = useSnapshot(WorkFormProxy)
@@ -30,7 +31,7 @@ export function Results() {
 						</p>
 					</CardDescription>
 				</CardHeader>
-				{WorkFormProxySnap.response && (
+				{WorkFormProxySnap.response && !WorkFormProxySnap.loading && (
 					<CardContent>
 						<div className='flex gap-4 flex-wrap'>
 							{WorkFormProxySnap.response.map(
@@ -52,6 +53,16 @@ export function Results() {
 									/>
 								)
 							)}
+						</div>
+					</CardContent>
+				)}
+				{WorkFormProxySnap.loading && (
+					<CardContent>
+						<div className='flex gap-4 flex-wrap'>
+							<SkeletonDemo />
+							<SkeletonDemo />
+							<SkeletonDemo />
+							<SkeletonDemo />
 						</div>
 					</CardContent>
 				)}
