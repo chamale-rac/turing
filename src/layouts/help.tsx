@@ -13,31 +13,6 @@ import {
 	AccordionTrigger,
 } from '@/components/ui/accordion'
 
-import {
-	Table,
-	TableBody,
-	TableCell,
-	TableHead,
-	TableHeader,
-	TableRow,
-} from '@/components/ui/table'
-
-const grammar = [
-	{
-		id: 1,
-		token: 'Non-terminal (Initial Symbol, Prefix...)',
-		example: 'AB, A, A1, 1A...',
-		notes:
-			'Must be an uppercase letter if length is 1, otherwise it can be uppercase letters and numbers.',
-	},
-	{
-		id: 2,
-		token: 'Terminal',
-		example: '[a-z], [0-9]...',
-		notes: 'Any word in lowercase, and individual numbers are valid too.',
-	},
-]
-
 export function Help() {
 	return (
 		<div className={'flex items-center justify-start w-full px-8 mt-8'}>

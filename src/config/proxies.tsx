@@ -1,6 +1,5 @@
 /* eslint-disable react-refresh/only-export-components */
 import { proxy } from 'valtio'
-import { any } from 'zod'
 
 interface Image {
 	src: string

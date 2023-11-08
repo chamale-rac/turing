@@ -3,12 +3,10 @@ import { useForm } from 'react-hook-form'
 import * as z from 'zod'
 import { neoSaveProxy, WorkFormProxy } from '@/config/proxies'
 import { useToast } from '@/components/ui/use-toast'
-import { useSnapshot } from 'valtio'
 import { Button } from '@/components/ui/button'
 import { Form } from '@/components/ui/form'
 import { useDropzone, FileWithPath } from 'react-dropzone'
 import { FilePlus, CheckCircle } from 'lucide-react'
-import { useEffect } from 'react'
 
 const formSchema = z.object({
 	// no validation for now
@@ -85,7 +83,7 @@ export function WorkForm() {
 	})
 
 	// Define a submit handler.
-	function onSubmit(values: z.infer<typeof formSchema>) {
+	function onSubmit() {
 		const reader = new FileReader()
 		let fileContent = ''
 
