@@ -26,7 +26,7 @@ export function Results() {
 					</CardTitle>
 					<CardDescription>
 						<p className='mb-0'>
-							<p>Here you can found the results for each simulation string!</p>
+							<p>Here you can found the result for each simulation string!</p>
 						</p>
 					</CardDescription>
 				</CardHeader>

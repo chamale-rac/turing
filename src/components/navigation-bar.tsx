@@ -12,8 +12,8 @@ import {
 	NavigationMenuTrigger,
 } from '@/components/ui/navigation-menu'
 
-const frontendRepo = 'grammar'
-const backendRepo = 'grammar-server'
+const frontendRepo = 'turing'
+const backendRepo = 'turing-api'
 
 export function NavigationBar() {
 	return (
@@ -27,11 +27,9 @@ export function NavigationBar() {
 								<NavigationMenuLink asChild>
 									<div className='flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md cursor-auto'>
 										{/* <Icons.logo className="h-6 w-6" /> */}
-										<div className='mb-2 mt-4 text-lg font-medium'>
-											iGrammar
-										</div>
+										<div className='mb-2 mt-4 text-lg font-medium'>iTuring</div>
 										<p className='text-sm leading-tight text-muted-foreground'>
-											Open Source project with grammar tools.
+											Open Source project with turing machine simulation tools.
 										</p>
 									</div>
 								</NavigationMenuLink>

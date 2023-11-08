@@ -1,8 +1,8 @@
-# 🚀 grammar-server AKA Proyecto 2
+# 🚀 turing AKA Proyecto 3
 
-Implementation of grammar simplification (to CNF) and CYK algorithm.
+Implementation of a turing machine simulator (one tape and one cache supported).
 
-This interface works directly with [grammar-server (repository)](https://github.com/chamale-rac/grammar-server).
+This interface works directly with [turing-api (repository)](https://github.com/chamale-rac/turing-api).
 
 ## 📑 Index
 
@@ -26,7 +26,7 @@ npm run dev
 
 ## Why I code this?
 
-Es un agregado al **Proyecto No. 2** de **Teoría de la Computación** **Sección 20** del **Segundo ciclo 2023**. Valía puntos, fuí coaccionado 😭.
+Es un agregado al **Proyecto No. 3** de **Teoría de la Computación** **Sección 20** del **Segundo ciclo 2023**. Valía puntos, fuí coaccionado 😭.
 
 ## Who I am?
 

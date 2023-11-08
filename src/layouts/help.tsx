@@ -57,11 +57,11 @@ export function Help() {
 						<AccordionItem value='item-1'>
 							<AccordionTrigger>Introduction</AccordionTrigger>
 							<AccordionContent>
-								iGrammar is a powerful web tool designed to enhance your
-								understanding of grammars. Originally developed as part of a
-								class project for the esteemed course at Universidad del Valle
-								de Guatemala. With iGrammar, you can effortlessly transform to
-								CNF and apply CYK in one click. Thanks for using, and enjoy!
+								iTuring is a web tool designed to enhance your understanding of
+								turing machines. Originally developed as part of a class project
+								for a esteemed course at Universidad del Valle de Guatemala.
+								With iTuring, you can effortlessly evaluate strings on a turing
+								machine of one tape and one cache. Thanks for using, and enjoy!
 								<br />
 								<br />
 								Sincerely, Samuel A. Chamalé - Human
@@ -70,41 +70,18 @@ export function Help() {
 							</AccordionContent>
 						</AccordionItem>
 						<AccordionItem value='item-2'>
-							<AccordionTrigger>Supported grammars</AccordionTrigger>
+							<AccordionTrigger>Supported TM</AccordionTrigger>
 							<AccordionContent>
-								Each row need to have a non-terminal then a{' '}
-								<strong>{'->'}</strong> and finally the desired productions.
-								Each production have different rules, and each rule different
-								terminal or non-terminal. It needs to be separated by a{' '}
-								<strong>{'|'}</strong> and tokens by a space.{' '}
+								Each turing machine needs to be defined on a .yaml file, at this
+								moment only one tape and cache is supported. Here some{' '}
 								<a
 									className='text-blue-500'
 									href='https://github.com/chamale-rac/grammar-server/tree/main/docs'
 									target='_blank'
 								>
-									Here some examples
-								</a>
-								.
-								<Table>
-									<TableHeader>
-										<TableRow>
-											<TableHead className='w-[300px]'>Type</TableHead>
-											<TableHead>Example</TableHead>
-											<TableHead>Notes</TableHead>
-										</TableRow>
-									</TableHeader>
-									<TableBody>
-										{grammar.map((rule) => (
-											<TableRow key={rule.id}>
-												<TableCell className='font-medium'>
-													{rule.token}
-												</TableCell>
-												<TableCell>{rule.example}</TableCell>
-												<TableCell>{rule.notes}</TableCell>
-											</TableRow>
-										))}
-									</TableBody>
-								</Table>
+									examples
+								</a>{' '}
+								on how to define your TM's.
 							</AccordionContent>
 						</AccordionItem>
 						<AccordionItem value='item-3'>
@@ -112,13 +89,9 @@ export function Help() {
 							<AccordionContent>
 								<ol>
 									<li>
-										<strong>1. </strong>Click an image, then there is a download
-										button on the top right corner.
+										<strong>1. </strong>You can drag a file to upload it.
 									</li>
-									<li>
-										<strong>2. </strong>When sharing a graph, you can go to the
-										page by clicking the icon on the toast.
-									</li>
+									<li></li>
 								</ol>
 							</AccordionContent>
 						</AccordionItem>
