@@ -17,6 +17,7 @@ import {
 	TableHeader,
 	TableRow,
 } from '@/components/ui/table'
+import { Smile, Frown } from 'lucide-react'
 import { TableCustom } from './table-custom'
 
 interface row {
@@ -41,6 +42,17 @@ export function SheetComponent({
 			<SheetTrigger asChild>
 				<div className='border rounded-lg px-3 py-3 flex gap-4 justify-center items-center'>
 					{stringSimulation}
+					{accept ? (
+						<Smile
+							aria-hidden='true'
+							className='text-green-500'
+						/>
+					) : (
+						<Frown
+							aria-hidden='true'
+							className='text-red-400'
+						/>
+					)}
 					<Button variant='secondary'>Open</Button>
 				</div>
 			</SheetTrigger>
